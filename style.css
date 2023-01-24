@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #16161a;
+}
+header a{
+    color: white;
+}
+
+
+.logo img {
+    width: 90px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #16161a;
+    font-weight: 300;
+}
+svg {
+    width: 100px;
+    height: auto;
+    padding: 10px;
+}
+.hero-slider {
+    overflow: hidden;
+    max-height: 600px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 6px;
+}
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Css Filter Category */
+#gallery {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+#gallery img{
+    transition: transform 0.3s ease-in-out;
+}
+#gallery img:hover {
+    transform: scale(1.1);
+}
+.filter-options {
+    text-align: center;
+    width: 85%;
+    padding: 15px;
+    margin: 0 auto;
+}
+.filter-button {
+    position: relative;
+    padding: 10px;
+    border: none;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.filter-button::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #862f30;
+    transition: width 0.3s ease-in-out;
+}
+
+.filter-button:hover::before {
+    width: 100%;
+}
+
+  
+  .img-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .container-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+  .img-item {
+    height: 250px;
+    object-fit: cover;
+    margin: 10px;
+  }
+  footer .back-to-top-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100%);
+}
+
+footer .back-to-top-icon.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+button.filter-button {
+    border: none;
+    margin: 5px;
+}
+.content-footer{
+    width: 85%;
+    margin: 0 auto;
+}
+.con-text-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.active-footer{
+    border: none;
+}
+.social-icons a{
+    width: 48px;
+    height: 48px;
+    line-height: 45px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 100%;
+    transition: 0.3s;
+    color: white;
+    z-index: 2;
+    position: relative;
+}
+#load-more-button:hover{
+    background-color: #862f30;
+    color: white;
+}
+.show i:hover {
+    color: #862f30;
+}
+button#load-more-button {
+    border: none;
+    background: #16161a;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin: 20px;
+    color: white;
+    cursor: pointer;
+}
+.copyright {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 10px;
+    color: #898989;
+}
+button{
+    background: none;
+}
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #16161a;
+    color: white;
+}
+.dark-mode .navbar li a{
+    color: white;
+}
+.dark-mode .logo svg g{
+    fill: white;
+}
+
+.dark-mode .filter-options .filter-button{
+    color: white;
+}
+/* Add the .dark-mode class to the body when the toggle button is clicked */
+#toggle-dark-mode:checked + .dark-mode {
+    background-color: #333;
+    color: #f1f1f1;
+}
+
+img{
+    cursor: pointer;
+}
+footer {
+    background-color: #16161a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer nav {
+    margin-bottom: 10px;
+}
+
+footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+display: flex;
+justify-content: center;
+}
+
+footer nav ul li {
+margin: 0 10px;
+}
+
+footer nav ul li a {
+color: #fff;
+text-decoration: none;
+}
+
+footer .social-icons {
+display: flex;
+justify-content: center;
+}
+
+footer .social-icons a {
+margin: 0 10px;
+color: #fff;
+font-size: 20px;
+}
+
+    /* CSS SOCIAL MEDIA ICON FOOTER */
+    .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .social-icons a {
+        margin: 0 10px;
+        font-size: 2em;
+        color: #333;
+        transition: color 0.2s ease;
+    }
+    
+    .social-icons a:hover {
+        color: #862f30; /* or any color you want */
+    }
+
+    /* Media Queries */
+    
+    @media only screen and (max-width: 768px) {
+    nav li {
+    display: block;
+    margin-bottom: 10px;
+    }
+    
+
+    .image-container img {
+        width: 100%;
+    }
+    }
+    @media only screen and (max-width: 600px) {
+        .img-item {
+          width: 50%;
+        }
+      }
+      
+      @media only screen and (max-width: 400px) {
+        .img-item {
+          width: 100%;
+        }
+      }
+      
